@@ -215,6 +215,7 @@
           <span class={['el-tabs__nav-next', scrollable.next ? '' : 'is-disabled']} on-click={scrollNext}><i class="el-icon-arrow-right"></i></span>
         ] : null;
 
+      console.log(panes);
       const tabs = this._l(panes, (pane, index) => {
         let tabName = pane.name || pane.index || index;
         const closable = pane.isClosable || editable;
